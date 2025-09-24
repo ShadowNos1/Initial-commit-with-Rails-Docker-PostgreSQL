@@ -1,24 +1,26 @@
-# README
+# Rails API для управления пациентами
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Проект реализует backend-приложение на **Ruby on Rails** с Docker и PostgreSQL для управления пациентами и врачами. Поддерживает расчёт BMR и BMI, фильтрацию и пагинацию.
 
-Things you may want to cover:
+## Функционал
+- CRUD для пациентов и врачей
+- Привязка пациентов к нескольким врачам
+- Получение списка пациентов с фильтрацией по имени, полу и возрасту
+- Расчёт BMR (формулы Миффлина–Сан Жеора и Харриса–Бенедикта)
+- Хранение истории расчётов BMR
+- Расчёт BMI через внешний API
+- Контейнеризация через Docker Compose
 
-* Ruby version
+## Технологии
+- Ruby 3.2.x, Rails 7.1
+- PostgreSQL
+- Docker, Docker Compose
+- Faraday (HTTP-клиент для BMI API)
+- Kaminari (пагинация)
 
-* System dependencies
+## Установка и запуск
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Склонировать репозиторий:
+```bash
+git clone https://github.com/ShadowNos1/Initial-commit-with-Rails-Docker-PostgreSQL.git
+cd Initial-commit-with-Rails-Docker-PostgreSQL
